@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Meet Particle Dark, one of the Best Dark HTML Templates with Modern, Tech & Startup Style. See it live now!">
+	<meta name="author" content="Skilltech Web Design">
+	<meta name="keywords" content="particle, particles js html, particle html, dark html themes, dark html templates, dark website design, technology html, modern html, dark, theme, template, skilltech web design, creative html, animated html, portfolio html, PlanckPulse.com"/>
+
+	<meta property="og:title" content="This Dark HTML Theme will blow your mind!"/>
+	<meta property="og:description" content="Meet Particle Dark, one of the Best Dark HTML Templates with Modern, Tech & Startup Style. See it live now!"/>
+	<meta property="og:image" content="assets/images/facebook-post-img-1200x630-2021.jpg"/>
+	<meta property="og:site_name" content="PlanckPulse.com"/>
+
+	<title>Planck Pulse | Home</title>
+
+	<link rel="icon" href="{{url_for('static',filename='favicon.ico') }}" type="image/x-icon">
+
+	<!-- Bootstrap CSS -->
+	<link href="{{ url_for('static', filename='vendor/bootstrap/bootstrap.min.css') }}" rel="stylesheet">
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Play:wght@400;700&family=Source+Sans+Pro:ital,wght@0,300;1,300&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,700;0,900;1,200;1,300;1,400&family=Blinker:wght@200;300;400;600;700;800&display=swap" rel="stylesheet">
+	<!-- Icon Fonts -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" /> -->
+
+	<link href="{{ url_for('static', filename='fonts/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet">
+	<!-- Animate.css -->
+	<link href="{{ url_for('static', filename='vendor/animate/animate.min.css') }}" rel="stylesheet">
+	<!-- Off Canvas Menu - Default Theme -->
+	<link href="{{ url_for('static', filename='vendor/offcanvas-nav/hc-offcanvas-nav.css') }}" rel="stylesheet">
+
+	<!-- Particle Theme CSS -->
+	<link href="{{ url_for('static', filename='css/particle-theme.css') }}" rel="stylesheet">
+	<link href="{{ url_for('static', filename='css/particle-colors.css') }}" rel="stylesheet">
+
+	<!-- jQuery -->
+	<script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js') }}"></script>
+
+	<!-- Simple Forms -->
+	<!-- <link rel="stylesheet" href="assets/vendor/simple-forms/css/simple-forms-skilltech-mod.css"> -->
+
+</head>
+
+<body class="pa-homepage pa-dark">
+
+	<!-- Page Transitions
+	================================================== -->
+	<div class="pa-page-transition pa-page-transition-1 is-active"></div>
+	<div class="pa-overlay" style="position: fixed; top: 0; left: 0; z-index: 10002; width: 100vw; height: 100vh; pointer-events: none; background: #091019;"></div>
+
+
+	<!-- Navigation Menu
+	================================================== -->
+	<a class="pa-mobile-main-logo" href="#"><img alt="" src="{{url_for ('static', filename='images/logo_mobile6.png') }}"></a>
+
+	<nav id="main-nav" class="pa-menu navbar pa-navbar navbar-expand-lg navbar-dark bg-transparent static-top">
+
+		<!-- Desktop Menu Logo -->
+		<a class="navbar-brand ml:10px"  href="/"><img alt="" src="{{url_for ('static', filename='images/logo6.png') }}"></a>
+
+		<!-- The Menu -->
+		<ul class="navbar-nav ml-auto">
+
+			<!-- Mobile Menu Logo (only use if "close" buttons are set to false in JS) -->
+			<li data-nav-custom-content class="custom-content pa-mobile-menu-logo"> 
+				<a class="pa-mobile-navbar-brand" href="#"><img alt="" src="{{url_for ('static', filename='images/logo_mobile6.png') }}"></a>
+			</li>
+
+			<!-- Regular Menu Items Start -->
+			<li class="nav-item menu-item">
+				<a class="nav-link hvr-underline-from-center" href="{{ url_for('home') }}">Home</a>
+				
+			</li>
+
+			<li class="nav-item menu-item-has-children">
+				<a class="nav-link hvr-underline-from-center" href="#">Our Work</a>
+				<ul class="pa-submenu-ul">
+					<li class="nav-item"><a class="nav-link" href="{{url_for('quantum_flow') }}">Quantum Flow</a></li>
+					<li class="nav-item"><a class="nav-link" href="{{url_for('q_simulate') }}">Q Simulate</a></li>
+					<li class="nav-item"><a class="nav-link" href="{{ url_for ('pulse_solver') }}">Pulse Solver</a></li>
+					<li class="nav-item"><a class="nav-link" href="/planck-optimize">Planck Optimize</a></li>
+				</ul>
+			</li>
+
+			<li class="nav-item">
+				<a class="nav-link hvr-underline-from-center" href="#about-us">About Us</a>
+			</li>
+
+			
+
+			<li class="nav-item">
+				<a class="nav-link hvr-underline-from-center" href="#skills">Our Skills</a>
+			</li>
+
+			
+
+			<li class="nav-item">
+				<a class="nav-link hvr-underline-from-center" href="#contact-us">Contact Us</a>
+			</li>
+
+			<!-- Regular Menu Items End -->
+
+
+		</ul>
+	</nav>
+	<!-- /.pa-menu -->
+
+
+	<!-- Hero Section
+	================================================== -->
+	<section id="top" class="pa-hero pa-centered-section pa-full-height pa-image-back pushable-content" style="background-image: url('{{ url_for('static',filename='images/hero-dark.jpg') }}');">
+
+		<div class="pa-absolute-fill pa-gradient-back-v1" style="opacity: 0;"></div><!-- Increase opacity to overlay hero with a gradient -->
+		<div id="particles-js"></div>
+
+		<div class="container pa-hero-content text-center">
+			<div class="row pa-hero-typed-text">
+				<div class="col-12">
+					<div class="typed-text mega-typed">
+						<span class="animated-text-effect">
+							<!-- <span class="typed-cursor">|</span> -->
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12" style="max-width: 976px; margin: 0 auto;">
+					<h2 class="pa-h2-v2-hero-subhead pa-white">At the forefront of quantum innovation, we craft solutions to decode complexity, drive progress, and redefine possibilities in computation</h2>
+				</div>
+			</div>
+		</div>
+
+	</section>
+	<!-- /.pa-hero -->
+
+
+
+
+
+
+	<!-- About Us Section
+	================================================== -->
+	<section id="about-us" class="pa-about-us pa-standard-section text-center pa-dark">
+
+		<div class="container">
+			<!-- Section Header -->
+			<div class="row">
+				<div class="col-12 col-xl-10 offset-xl-1">
+
+					<h1 class="pa-h1-v2 pa-bright fadeInDelay00Duration10"><strong>About  </strong>Planck Pulse</h1>
+					<p class="pa-p-v1 pa-bright fadeInDelay03Duration10">At PlanckPulse, we are at the forefront of the quantum revolution, dedicated to transforming how industries approach complex challenges. Our platform bridges the gap between theoretical quantum advancements and practical solutions, empowering businesses, researchers, and innovators to unlock the true potential of quantum computing.
+						<br/><br/>
+						From optimizing operations to accelerating groundbreaking research, PlanckPulse delivers cutting-edge tools, resources, and insights tailored for today’s quantum era. Whether you're designing algorithms, exploring hybrid solutions, or seeking quantum-powered products, we provide the expertise and technology needed to drive results.</p>
+				
+				</div>
+			</div>
+			<div class="row">
+				<!-- Icon list (no column) -->
+				<ul class="pa-icon-list-horizontal-dark">
+					<li>
+						<span class="pa-icon-list-icon fadeInDelay03Duration10"><i class="material-icons">beenhere</i></span>
+						<p class="pa-icon-list-text pa-p-v1 pa-bright fadeInDelay03Duration10">Innovation-Driven</p>
+					</li>
+					<li>
+						<span class="pa-icon-list-icon fadeInDelay06Duration10"><i class="material-icons">scale</i></span>
+						<p class="pa-icon-list-text pa-p-v1 pa-bright fadeInDelay06Duration10">Scalable Solution</p>
+					</li>
+					<li>
+						<span class="pa-icon-list-icon fadeInDelay10Duration10"><i class="material-icons">groups</i></span>
+						<p class="pa-icon-list-text pa-p-v1 pa-bright fadeInDelay10Duration10">Collaborative Approach</p>
+					</li>
+				</ul>
+			</div>
+			<!-- Bottom Images -->
+			<div class="row">
+				<div class="col-12 pa-about-us-bottom-images">
+					<!-- <img alt="" class="pa-about-img-left fadeInRight--Custom" src="assets/images/quantum-entanglement.jpg">
+					<img alt="" class="pa-about-img-center slideup" src="assets/images/quantum-entanglement.jpg">
+					<img alt="" class="pa-about-img-right fadeInLeft--Custom" src="assets/images/vertical_quantum.png"> -->
+					<img alt="" class="pa-about-img-left fadeInRight--Custom" src="{{url_for ('static', filename='images/quantum-computing.png') }}">
+					<img alt="" class="pa-about-img-center slideup" src="{{url_for ('static', filename='images/AI.png') }}">
+					<img alt="" class="pa-about-img-right fadeInLeft--Custom" src="{{url_for ('static', filename='images/cyber_security.png') }}">
+				</div>
+			</div>
+		</div>
+
+	</section>
+	<!-- /.pa-about-us -->
+
+
+	<!-- Stripe Tagline Section
+	================================================== -->
+	<section class="pa-stripe-tagline">
+		<div class="container-fluid text-center p-0">
+			<div class="row m-0">
+				<div class="col-12 p-0">
+					<div class="pa-stripe-heading py-2 py-sm-4">
+						<h5 class="pa-h5-v1 pa-bright pt-4 pb-1 mb-4 fadeInDelay03Duration10">We are here to <strong>make things Better</strong></h5>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+	<!-- /.pa-stripe-tagline -->
+
+
+	<!-- Quote Section
+	================================================== -->
+	<section class="pa-quote" data-parallax="scroll" data-speed="0.2" data-image-src="{{url_for ('static', filename='images/quote-background.jpg') }}" style="position: relative; z-index: 2;">
+
+		<div class="container text-center">
+			<div class="row">
+				<div class="col-12 col-xl-10 offset-xl-1">
+					<h2 class="pa-h2-quote pa-bright fadeInDelay03Duration10"><q>To me, <strong>quantum computation </strong> is a new and deeper and better way to understand the laws of physics, and hence understanding physical reality as a whole.</q></h2>
+					<p class="pa-quote-author pa-bright fadeInDelay03Duration10">David Deutsch<span class="pa-author-role">&nbsp;- Physicist</span></p>
+				</div>
+			</div>
+		</div>
+
+	</section>
+	<!-- /.pa-quote -->
+
+
+	<!-- Services (What We Do) Section
+	================================================== -->
+	<section id="services" class="pa-what-we-do pa-standard-section text-center">
+
+		<div class="container">
+			<!-- Section Header -->
+			<div class="row">
+				<div class="col-12 col-xl-10 offset-xl-1">
+
+					<h1 class="pa-h1-v2 pa-bright fadeInDelay00Duration10">Business Advantage Delivered <strong>Today!</strong></h1>
+					<p class="pa-p-v1 pa-bright fadeInDelay03Duration10">Our mission is to empower industries by leveraging quantum computing for practical, transformative applications. From solving complex optimization problems to advancing critical research, quantum computing is reshaping what’s possible.</p>
+				
+				</div>
+			</div>
+			<!-- Services with phone section -->
+			<div class="row pa-services text-center">
+				<div class="col-12 col-sm-10 offset-sm-1 col-md-4 offset-md-0 offset-lg-0 col-lg-4 order-2 order-md-1 text-center">
+					<ul class="pa-services-ul pa-right text-md-right text-left">
+						<li>
+							<a href="service-item.html">
+								<span class="pa-serv-list-icon fadeInDelay03Duration10"><i class="material-icons">factory</i></span>
+								<h3 class="pa-h3-v1 pa-bright fadeInDelay03Duration10">Manufacturing & Logistics</h3>
+								<p class="pa-p-v1 pa-bright fadeInDelay03Duration10">Quantum optimization enhances productivity, streamlines operations, and reduces costs. Industries are leveraging this to stay competitive and efficient.</p>
+							</a>
+						</li>
+						<li>
+							<a href="service-item.html">
+								<span class="pa-serv-list-icon fadeInDelay06Duration10"><i class="material-icons">public</i></span>
+								<h3 class="pa-h3-v1 pa-bright fadeInDelay06Duration10">Public Sector</h3>
+								<p class="pa-p-v1 pa-bright fadeInDelay06Duration10">Quantum computing empowers governments to advance defense, intelligence, disaster management, energy infrastructure, and public services with unmatched precision and reliability.</p>
+							</a>
+						</li>
+						<li>
+							<a href="service-item.html">
+								<span class="pa-serv-list-icon fadeInDelay10Duration10"><i class="material-icons">research</i></span>
+								<h3 class="pa-h3-v1 pa-bright fadeInDelay10Duration10">Life Sciences & Research</h3>
+								<p class="pa-p-v1 pa-bright fadeInDelay10Duration10">Quantum systems open doors to groundbreaking research in materials science, artificial intelligence, drug discovery, and more—helping researchers tackle some of humanity’s greatest challenges.
+
+								</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-12 col-md-4 order-1 order-md-2">
+					<!-- <img alt="" class="pa-services-image" src="assets/images/iphone-services.png"> -->
+					<img alt="" class="pa-services-image" src="{{url_for ('static', filename='images/quibit.png') }}">
+					<!-- <img alt="" class="pa-services-image" src="assets/images/quibit-removebg-preview.png"> -->
+				</div>
+				<div class="col-12 col-sm-10 offset-sm-1 col-md-4 offset-md-0 offset-lg-0 col-lg-4 order-3 order-md-3 text-center">
+					<ul class="pa-services-ul pa-left text-left">
+						<li>
+							<a href="service-item.html">
+								<span class="pa-serv-list-icon fadeInDelay03Duration10"><i class="material-icons">account_balance</i></span>
+								<h3 class="pa-h3-v1 pa-bright fadeInDelay03Duration10">Financial Services</h3>
+								<p class="pa-p-v1 pa-bright fadeInDelay03Duration10">Quantum computing enables advanced risk modeling, fraud detection, portfolio optimization, and faster transaction processing, empowering the financial sector to make more informed decisions.</p>
+							</a>
+						</li>
+						<li>
+							<a href="service-item.html">
+								<span class="pa-serv-list-icon fadeInDelay06Duration10"><i class="material-icons">solar_power</i></span>
+								<h3 class="pa-h3-v1 pa-bright fadeInDelay06Duration10">Energy & Sustainability</h3>
+								<p class="pa-p-v1 pa-bright fadeInDelay06Duration10">From energy grid optimization to renewable energy management, quantum systems help reduce waste, enhance efficiency, and drive sustainable energy solutions.</p>
+							</a>
+						</li>
+						<li>
+							<a href="service-item.html">
+								<span class="pa-serv-list-icon fadeInDelay10Duration10"><i class="material-icons">assistant</i></span>
+								<h3 class="pa-h3-v1 pa-bright fadeInDelay10Duration10">Artificial Intelligence</h3>
+								<p class="pa-p-v1 pa-bright fadeInDelay10Duration10">Quantum computing accelerates machine learning processes, enabling more complex algorithms, improved pattern recognition, and enhanced predictive analytics, paving the way for next-generation AI systems.</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+
+	</section>
+	<!-- /.pa-what-we-do -->
+	
+	<!-- Portfolio Section
+	================================================== -->
+	<section id="portfolio" class="pa-portfolio">
+		<!-- Portfolio header -->
+		<div class="container-fluid text-center p-0">
+			<div class="row m-0">
+				<div class="col-12 p-0">
+					<div class="pa-stripe-heading">
+						<h1 class="pa-h1-v1 pa-bright fadeInLeftDelay03Duration10"><strong>See our work</strong></h1>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<!-- Portfolio thumbnails -->
+		<div class="container-fluid">
+			<div class="row pa-row-max2560">
+				<div class="col-12 col-sm-6 col-lg-3 p-0">
+					<div class="pa-portfolio-thumb m-0 text-center fadeInDelay00Duration10" style="background-image: url('{{ url_for('static', filename='images/digital.jpg')}}'); opacity: 80%;">
+						<div class="pa-portfolio-thumb-background-overlay"></div>
+						<div class="pa-portfolio-thumb-deco-1"></div>
+						<div class="pa-portfolio-thumb-deco-2"></div>
+						<div class="pa-portfolio-thumb-centered-content w-100">
+							<a href="pulse-solver.html" class="pa-portfolio-thumb-icon-link">
+								<span class="pa-portfolio-thumb-hover-icon"><i class="fa fa-eye"></i></span>
+							</a>
+							<a href="pulse-solver.html">
+								<h4 class="pa-portfolio-thumb-heading">PulseSolver</h4>
+							</a>
+							<p class="pa-portfolio-thumb-desc">Advanced solvers for quantum and hybrid systems.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-lg-3 p-0">
+					<div class="pa-portfolio-thumb m-0 text-center fadeInDelay00Duration10" style="background-image: url('{{ url_for('static', filename='images/quantum-computer1.jpg')}}'); opacity: 80%;">
+						<div class="pa-portfolio-thumb-background-overlay"></div>
+						<div class="pa-portfolio-thumb-deco-1"></div>
+						<div class="pa-portfolio-thumb-deco-2"></div>
+						<div class="pa-portfolio-thumb-centered-content w-100">
+							<a href="quantum-flow.html" class="pa-portfolio-thumb-icon-link">
+								<span class="pa-portfolio-thumb-hover-icon"><i class="fa fa-eye"></i></span>
+							</a>
+							<a href="quantum-flow.html">
+								<h4 class="pa-portfolio-thumb-heading">QuantumFlow</h4>
+							</a>
+							<p class="pa-portfolio-thumb-desc">Workflow software for hybrid quantum-classical applications.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-lg-3 p-0">
+					<div class="pa-portfolio-thumb m-0 text-center fadeInDelay00Duration10" style="background-image: url('{{ url_for('static', filename='images/quantum-computer.jpg')}}'); opacity: 80%;	">
+						<div class="pa-portfolio-thumb-background-overlay"></div>
+						<div class="pa-portfolio-thumb-deco-1"></div>
+						<div class="pa-portfolio-thumb-deco-2"></div>
+						<div class="pa-portfolio-thumb-centered-content w-100">
+							<a href="planck-optimize.html" class="pa-portfolio-thumb-icon-link">
+								<span class="pa-portfolio-thumb-hover-icon"><i class="fa fa-eye"></i></span>
+							</a>
+							<a href="planck-optimize.html">
+								<h4 class="pa-portfolio-thumb-heading">PlanckOptimize</h4>
+							</a>
+							<p class="pa-portfolio-thumb-desc">Optimization software using quantum algorithms.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-lg-3 p-0">
+					<div class="pa-portfolio-thumb m-0 text-center fadeInDelay00Duration10" style="background-image: url('{{ url_for('static', filename='images/metaverse.jpg')}}'); opacity: 70%;">
+						<div class="pa-portfolio-thumb-background-overlay"></div>
+						<div class="pa-portfolio-thumb-deco-1"></div>
+						<div class="pa-portfolio-thumb-deco-2"></div>
+						<div class="pa-portfolio-thumb-centered-content w-100">
+							<a href="q-simulate.html" class="pa-portfolio-thumb-icon-link">
+								<span class="pa-portfolio-thumb-hover-icon"><i class="fa fa-eye"></i></span>
+							</a>
+							<a href="q-simulate.html">
+								<h4 class="pa-portfolio-thumb-heading">QSimulate</h4>
+							</a>
+							<p class="pa-portfolio-thumb-desc">A quantum simulation software for research and industries.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /.pa-portfolio -->
+
+	
+	<!-- /.pa-cta-v2 -->
+
+
+	<!-- Skills Section
+	================================================== -->
+	<section id="skills" class="pa-skills">
+
+		<div class="container">
+			<!-- Section Header -->
+			<div class="row">
+				<div class="col-12 col-xl-10 offset-xl-1 text-center">
+					<h5 class="pa-h1-v3 pa-bright pt-4 pb-1 mb-4 fadeInDelay03Duration10">Let <strong>Our Skills</strong> speak for Us</h5>
+					<p class="pa-p-v1 pa-bright fadeInDelay03Duration10">We work with latest technologies to develop our quantum technology frameworks</p>
+				</div>
+			</div>
+
+			<div class="row pa-skills-row">
+				<div class="col-12">
+					<div class="pa-skill-warp">
+						<p class="pa-skill-name pa-skill-el">Quantum Machine Learning (QML)</p>
+						<div class="pa-skill-area pa-skill-el">
+							<div class="pa-skill-bar progressBar" style="width: 75%;"></div>
+						</div>
+						<p class="pa-skill-number pa-skill-el"><span class="pa-counterskills">75</span><span class="fadeInDelay10Duration10">%</span></p>
+					</div>
+					<div class="pa-skill-warp">
+						<p class="pa-skill-name pa-skill-el">Quantum Network Design</p>
+						<div class="pa-skill-area pa-skill-el">
+							<div class="pa-skill-bar progressBar" style="width: 80%;"></div>
+						</div>
+						<p class="pa-skill-number pa-skill-el"><span class="pa-counterskills">80</span><span class="fadeInDelay10Duration10">%</span></p>
+					</div>
+					<div class="pa-skill-warp">
+						<p class="pa-skill-name pa-skill-el">Google Cirq</p>
+						<div class="pa-skill-area pa-skill-el">
+							<div class="pa-skill-bar progressBar" style="width: 90%;"></div>
+						</div>
+						<p class="pa-skill-number pa-skill-el"><span class="pa-counterskills">90</span><span class="fadeInDelay10Duration10">%</span></p>
+					</div>
+					<div class="pa-skill-warp">
+						<p class="pa-skill-name pa-skill-el">IBM Quantum (Qiskit)</p>
+						<div class="pa-skill-area pa-skill-el">
+							<div class="pa-skill-bar progressBar" style="width: 70%;"></div>
+						</div>
+						<p class="pa-skill-number pa-skill-el"><span class="pa-counterskills">70</span><span class="fadeInDelay10Duration10">%</span></p>
+					</div>
+					<div class="pa-skill-warp">
+						<p class="pa-skill-name pa-skill-el">Quantum Simulation</p>
+						<div class="pa-skill-area pa-skill-el">
+							<div class="pa-skill-bar progressBar" style="width: 90%;"></div>
+						</div>
+						<p class="pa-skill-number pa-skill-el"><span class="pa-counterskills">90</span><span class="fadeInDelay10Duration10">%</span></p>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+
+	</section>
+	<!-- /.pa-skills -->
+
+
+	<!-- Contact Us Section
+	================================================== -->
+	<section id="contact-us" class="pa-contact-us" data-parallax="scroll" data-speed="0" data-image-src="{{url_for('static',filename='images/contact-hero.jpg') }}">
+
+		<div class="container">
+			<!-- Section Header -->
+			<div class="row text-center">
+				<div class="col-12 col-xl-10 offset-xl-1">
+					<h1 class="pa-h1-v2 pa-bright fadeInDelay00Duration10">Let's <strong>Connect</strong></h1>
+					<p class="pa-p-v1 pa-white fadeInDelay03Duration10">Have a question about quantum computing or want to collaborate? Fill out the form below, and we'll get back to you as soon as possible!</p>
+					<div class="pt-0 pt-sm-3 pt-md-3 pt-lg-4 pt-xl-5"></div>
+				</div>
+			</div>
+			<div class="row">
+				<!-- Contact Info -->
+				<div class="col-12 col-md-6 col-xl-5 offset-xl-1 pa-contact-info d-flex">
+					<div class="pa-glass pa-left">
+						<h1 class="pa-h1-v3 pa-bright fadeInDelay03Duration10">Our office <strong>info</strong></h1>
+						<p class="pa-p-v1 pa-white fadeInDelay03Duration10"><span><i class="material-icons">mail_outline</i></span>info@planckpulse.com</p>
+						<p class="pa-p-v1 pa-white fadeInDelay06Duration10"><span><i class="material-icons">call</i></span>+1 (0) 21 555 4597</p>
+						<p class="pa-p-v1 pa-white fadeInDelay06Duration10"><span><i class="fa fa-whatsapp"></i></span>+92 334 3231802</p>
+						<p class="pa-p-v1 pa-white fadeInDelay10Duration10"><span><i class="material-icons">business</i></span>DLG Offices 49 Wellignton St Unit# 101</p>
+						<p class="pa-p-v1 pa-white fadeInDelay10Duration10"><span><i class="material-icons">location_on</i></span>Toronto, ON MSE 1C9</p>
+						<div class="pa-social-section">
+							<h1 class="pa-h1-v3 pa-bright fadeInDelay03Duration10"><strong>Connect</strong> with us</h1>
+							<a class="pa-social-icons" href="#" target="_blank"><span class="fadeInDelay03Duration10"><i class="fa fa-linkedin"></i></span></a>
+						</div>
+					</div>
+				</div>
+				<!-- Contact Form -->
+				<div class="col-12 col-md-6 col-xl-5 pa-contact-form d-flex justify-content-end">
+					<div class="pa-glass pa-right">
+						<h1 class="pa-h1-v3 pa-bright fadeInDelay03Duration10">Send us a <strong>Message</strong></h1>
+
+						<!-- Real Working Form - Simple Forms V3 -->
+						<div class="sf-wrapper">
+							<form id="contact-form-1" action="https://formsubmit.co/fec6272c4fddbee904566ec0c5230f86" method="post">
+								
+								<div class="form-group">
+									<label>Name</label>
+									<input type="text" name="name" value="" class="validate-name" min="2" required>
+								</div>
+
+								<div class="form-group">
+									<label>Email</label>
+									<input type="text" name="email" class="validate-email" value="">
+								</div>
+								
+								<div class="form-group">
+									<label>Message</label>
+									<textarea name="message" required></textarea>
+								</div>
+
+
+								<div class="form-submit">
+									<button type="submit" class="pa-hvr-sweep-to-right">Send now</button>
+								</div>
+
+								<div class="server-response"></div>
+
+							</form>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+	<!-- /.pa-menu -->
+
+
+	<!-- Footer
+	================================================== -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-12 text-center my-2 pt-5 pb-4">
+					<p>Copyright © 2025 - <a href="https://nmm-quantum.vercel.app/" target="_blank">PlanckPulse.com</a></p>
+				</div>
+			</div>
+		</div>
+		<div class="pa-back-to-top-wrap">
+			<a class="pa-back-to-top" href="#top"><span class="pa-back-to-top"></span></a>
+		</div>
+	</footer>
+
+
+	<!-- Helper div for inserting before scripts
+	================================================== -->
+	<div class="pa-body-end"></div>
+
+
+	<!-- Scripts / Body End
+	================================================== -->
+	<!-- Vendor Scripts -->
+	<script src="{{ url_for('static', filename='vendor/jquery/jquery-migrate.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='vendor/bootstrap/bootstrap.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='vendor/offcanvas-nav/hc-offcanvas-nav.js') }}"></script>
+	<script src="{{ url_for('static', filename='vendor/parallax/parallax.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='vendor/jquery/jquery.easing.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='vendor/typed/typed.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='vendor/wow/wow.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='vendor/particles/particles.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='vendor/waypoints/waypoints.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='vendor/counterup/jquery.counterup.min.js') }}"></script>
+	
+	<!-- Theme Scripts and Inits -->
+	<script src="{{ url_for('static', filename='js/particle-theme.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/page-home-dark.js') }}"></script>
+	
+
+</body>
+
+</html>

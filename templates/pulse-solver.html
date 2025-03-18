@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Meet Particle, one of the Best HTML Templates with Modern & Tech Design. See it live now!">
+	<meta name="author" content="Skilltech Web Design">
+	<meta name="keywords" content="particle, particles js html, particle html, technology html, modern html, best project presentation, project design, portfolio item design, best websites, skilltech, skilltech web design, creative html, animated html, portfolio html, PlanckPulse.com"/>
+
+	<meta property="og:title" content="This Modern, Tech & Startup HTML Theme will blow your mind!"/>
+	<meta property="og:description" content="See the live interactive backgrounds react to your mouse movement and more. The Best Modern & Technology HTML Theme is here. Meet Particle!"/>
+	<meta property="og:image" content="assets/images/facebook-post-img-1200x630-2021.jpg"/>
+	<meta property="og:site_name" content="PlanckPulse.com"/>
+
+	<title>Pulse Solver</title>
+
+	<link rel="icon" href="{{url_for('static',filename='favicon.ico') }}" type="image/x-icon">
+
+	<!-- Bootstrap CSS -->
+	<link href="{{ url_for('static', filename='vendor/bootstrap/bootstrap.min.css') }}" rel="stylesheet">
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Play:wght@400;700&family=Source+Sans+Pro:ital,wght@0,300;1,300&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,700;0,900;1,200;1,300;1,400&family=Blinker:wght@200;300;400;600;700;800&display=swap" rel="stylesheet">
+	<!-- Icon Fonts -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="{{ url_for('static', filename='fonts/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet">
+	<!-- Animate.css -->
+	<link href="{{ url_for('static', filename='vendor/animate/animate.min.css') }}" rel="stylesheet">
+	<!-- Off Canvas Menu - Default Theme -->
+	<link href="{{ url_for('static', filename='vendor/offcanvas-nav/hc-offcanvas-nav.css') }}" rel="stylesheet">
+
+	<!-- Particle Theme CSS -->
+	<link href="{{ url_for('static', filename='css/particle-theme.css') }}" rel="stylesheet">
+	<link href="{{ url_for('static', filename='css/particle-colors.css') }}" rel="stylesheet">
+
+	<!-- jQuery -->
+	<script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js') }}"></script>
+
+	<!-- Simple Forms -->
+	<!-- <link rel="stylesheet" href="assets/vendor/simple-forms/css/simple-forms-skilltech-mod.css"> -->
+
+</head>
+
+<body class="pa-project-item single">
+
+	<!-- Page Transitions
+	================================================== -->
+	<div class="pa-page-transition pa-page-transition-1 is-active"></div>
+	<div class="pa-overlay" style="position: fixed; top: 0; left: 0; z-index: 10002; width: 100vw; height: 100vh; pointer-events: none; background: #091019;"></div>
+
+	<!-- Navigation Menu
+	================================================== -->
+	<a class="pa-mobile-main-logo" href="/"><img alt="" src="{{url_for ('static',filename='images/logo6.png') }}"></a>
+
+	<nav id="main-nav" class="pa-menu navbar pa-navbar navbar-expand-lg navbar-dark bg-transparent static-top">
+
+		<!-- Desktop Menu Logo -->
+		<a class="navbar-brand ml:10px"  href="/"><img alt="" src="{{url_for ('static',filename='images/logo6.png') }}"></a>
+
+		<!-- The Menu -->
+		<ul class="navbar-nav ml-auto">
+
+			<!-- Mobile Menu Logo (only use if "close" buttons are set to false in JS) -->
+			<li data-nav-custom-content class="custom-content pa-mobile-menu-logo"> 
+				<a class="pa-mobile-navbar-brand" href="#"><img alt="" src="{{url_for ('static',filename='images/logo6.png') }}"></a>
+			</li>
+
+			<!-- Regular Menu Items Start -->
+			<li class="nav-item menu-item">
+				<a class="nav-link hvr-underline-from-center" href="/">Home</a>
+				
+			</li>
+
+			<li class="nav-item menu-item-has-children">
+				<a class="nav-link hvr-underline-from-center" href="#">Our Work</a>
+				<ul class="pa-submenu-ul">
+					<li class="nav-item"><a class="nav-link" href="/quantum-flow">Quantum Flow</a></li>
+					<li class="nav-item"><a class="nav-link" href="/q-simulate">Q Simulate</a></li>
+					<li class="nav-item"><a class="nav-link" href="/pulse-solver">Pulse Solver</a></li>
+					<li class="nav-item"><a class="nav-link" href="/planck-optimize">Planck Optimize</a></li>
+				</ul>
+			</li>
+
+			<li class="nav-item">
+				<a class="nav-link hvr-underline-from-center" href="/home#about-us">About Us</a>
+			</li>
+
+			
+
+			<li class="nav-item">
+				<a class="nav-link hvr-underline-from-center" href="/home#skills">Our Skills</a>
+			</li>
+
+			
+
+			<li class="nav-item">
+				<a class="nav-link hvr-underline-from-center" href="/home#contact-us">Contact Us</a>
+			</li>
+
+			<!-- Regular Menu Items End -->
+
+			
+
+		</ul>
+	</nav>
+	<!-- /.pa-menu -->
+
+
+	<!-- Hero Section
+	================================================== -->
+	<section id="top" class="pa-hero pa-project-hero pa-half-height pa-image-back d-flex align-items-end pushable-content" style="background-image: url('{{url_for('static',filename='images/digital-9301920_1280.jpg')}}'); opacity: 80%; ">
+		
+		<div class="container-fluid pa-project-hero-info">
+			<div class="row pa-mobile-project-view">
+				<div class="col px-0">
+					<img alt="" src="{{url_for ('static',filename='images/digital-9301920_1280.jpg') }}">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<div id="particles-js"></div>
+					<div class="container">
+						<div class="row d-flex align-items-center">
+							<div class="col-12 col-lg-8 text-left px-0">
+								<div class="typed-text">
+									<span class="">
+										Pulse Solver
+										<!-- <span class="typed-cursor">|</span> -->
+									</span>
+								</div>
+								<p class="pa-p-v1 pa-bright fadeInDelay03Duration10">Advanced solvers for quantum and hybrid systems.</p>
+							</div>
+							<div class="col-12 col-lg-4 mb-4 mb-lg-0 text-left text-lg-right px-0">
+								<a class="pa-button-primary pa-hvr-sweep-to-right" href="#project-info">Pre Order</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+	<!-- /.pa-hero -->
+
+
+	<!-- Project Content Section
+	================================================== -->
+	<section id="project-info" class="pa-project-content" data-parallax="scroll" data-speed="0" data-image-src="{{url_for('static',filename='images/contact-hero.jpg') }}">
+		<div class="container">
+			<div class="row">
+				<!-- Left Side - About & Links -->
+				<div class="col-12 col-xl-7 text-left">
+					<h1 class="pa-h1-v3 pa-bright fadeInDelay03Duration10">About the <strong>project</strong></h1>
+					<p class="pa-p-v1 pa-bright fadeInDelay03Duration10">PulseSolver represents the forefront of quantum and hybrid-quantum problem-solving. Engineered for researchers and industry professionals, it combines advanced quantum processing with hybrid solver technologies to tackle the most intricate challenges across various domains, including AI, material science, and large-scale simulations. PulseSolver provides flexibility in choosing the best computational method—classical, quantum, or hybrid—for the task at hand, ensuring optimal performance and reliability. Its user-friendly interface, comprehensive developer tools, and robust cloud integration make it an essential tool for achieving groundbreaking results in research and application development.</p>
+					<!-- <div class="row pa-project-links">
+						<div class="col-12 col-md-7">
+							<h1 class="pa-h1-v3 pa-bright fadeInDelay03Duration10">Useful <strong>links</strong></h1>
+							<a title="Official Project Link" href="#" target="_blank"><span class="pa-project-icons fadeInDelay03Duration10"><i class="material-icons">computer</i></span></a>
+							<a title="Project on Facebook" href="#" target="_blank"><span class="pa-project-icons fadeInDelay03Duration10"><i class="fa fa-facebook"></i></span></a>
+							<a title="Project on Behance" href="#" target="_blank"><span class="pa-project-icons fadeInDelay03Duration10"><i class="fa fa-behance"></i></span></a>
+							<a title="Project on Linkedin" href="#" target="_blank"><span class="pa-project-icons fadeInDelay03Duration10"><i class="fa fa-linkedin"></i></span></a>
+							<a title="Project on Dribbble" href="#" target="_blank"><span class="pa-project-icons fadeInDelay03Duration10"><i class="fa fa-dribbble"></i></span></a>
+							<a title="Project on Instagram" href="#" target="_blank"><span class="pa-project-icons fadeInDelay03Duration10"><i class="fa fa-instagram"></i></span></a>
+						</div>
+					</div> -->
+				</div>
+				<!-- Right Side - Project Details -->
+				<div class="col-12 col-xl-5 pa-project-infoboxes overflow-hidden"><!-- fadeInRightDelay11Duration10 -->
+					<div class="pa-project-infoboxes-helper fadeInLeftDelay05Duration10">
+						<div class="pa-proj-infobox">
+							<div class="pa-proj-infobox-label">Project Name</div><div class="pa-proj-infobox-value">Planck Optimize</div>
+							<div class="boaderix"></div>
+						</div>
+						<div class="pa-proj-infobox">
+							<div class="pa-proj-infobox-label">Created by</div><div class="pa-proj-infobox-value">Planck Pulse</div>
+							<div class="boaderix"></div>
+						</div>
+						<div class="pa-proj-infobox">
+							<div class="pa-proj-infobox-label">Cost</div><div class="pa-proj-infobox-value">$5,000.00</div>
+							<div class="boaderix"></div>
+						</div>
+						<div class="pa-proj-infobox">
+							<div class="pa-proj-infobox-label">Completion Date</div><div class="pa-proj-infobox-value">December 20 2024</div>
+							<div class="boaderix"></div>
+						</div>
+					</div>
+					<div class="pa-project-infoboxes-helper pa-right fadeInLeftDelay05Duration10">	
+						
+						<div class="pa-proj-infobox">
+							<div class="pa-proj-infobox-label">Project Length</div><div class="pa-proj-infobox-value">3 Months</div>
+							<div class="boaderix"></div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			<div class="row overflow-hidden">
+				<div class="col slideDownDelay10Duration10">
+					<h1 class="pa-h1-v3 pa-bright">Get <strong>involved</strong></h1>
+
+					<!-- Real Working Form - Simple Forms V3 -->
+					<div class="sf-wrapper">
+						<form id="contact-form-1" action="https://formsubmit.co/fec6272c4fddbee904566ec0c5230f86" method="post">
+							
+							<div class="form-group">
+								<label>Name</label>
+								<input type="text" name="name" value="" class="validate-name" min="2" required>
+							</div>
+
+							<div class="form-group">
+								<label>Email</label>
+								<input type="text" name="email" class="validate-email" value="">
+							</div>
+							
+							<div class="form-group">
+								<label>Message</label>
+								<textarea name="message" required></textarea>
+							</div>
+
+
+							<div class="form-submit">
+								<button type="submit" class="pa-hvr-sweep-to-right">Send now</button>
+							</div>
+
+							<div class="server-response"></div>
+
+						</form>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		
+	</section>
+	<!-- /.pa-project-content -->
+
+
+	<!-- Footer
+	================================================== -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-12 text-center my-2 pt-5 pb-4">
+					<p>Copyright © 2025 - <a href="https://nmm-quantum.vercel.app/" target="_blank">PlanckPulse.com</a></p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<!-- Helper div for inserting before scripts
+	================================================== -->
+	<div class="pa-body-end"></div>
+
+
+	<!-- Scripts / Body End
+	================================================== -->
+	<!-- Vendor Scripts -->
+	<script src="{{ url_for('static', filename='vendor/jquery/jquery-migrate.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='vendor/bootstrap/bootstrap.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='vendor/offcanvas-nav/hc-offcanvas-nav.js') }}"></script>
+	<script src="{{ url_for('static', filename='vendor/parallax/parallax.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='vendor/jquery/jquery.easing.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='vendor/typed/typed.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='vendor/wow/wow.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='vendor/particles/particles.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='vendor/waypoints/waypoints.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='vendor/counterup/jquery.counterup.min.js') }}"></script>
+	
+	<!-- Theme Scripts and Inits -->
+	<script src="{{ url_for('static', filename='js/particle-theme.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/page-home-dark.js') }}"></script>
+
+</body>
+
+</html>
